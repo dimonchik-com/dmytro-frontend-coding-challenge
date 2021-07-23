@@ -1,13 +1,14 @@
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../theme';
 
-const Button = styled.button`
+export const StyledButton = styled.button`
   background: transparent;
   border: 1px solid ${theme.palette.secondary.main};
-  border-radius: ${theme.borderRadius};
+  border-radius: 4px;
   color: ${theme.palette.primary.main};
   padding: ${theme.spacing(2)};
   ${theme.typography.button};
+  cursor: pointer;
 
   &:hover {
     border: 1px solid ${theme.palette.secondary.light};
@@ -19,5 +20,3 @@ const Button = styled.button`
     color: ${theme.palette.primary.dark};
   }
 `;
-
-export default Button;
